@@ -1,9 +1,9 @@
 from database.database import Base
-from sqlalchemy import column , Integer , String
+from sqlalchemy import Column , Integer , String
 
 class user(Base):
     __tablename__="user"
-    id = column(Integer,primary_key=true,index=true)
-    name = column(String)
-    amail = column(String)
-    password = column(String)
+    id = Column(Integer, primary_key=True )
+    name = Column(String)
+    email = Column(String)
+    password = Column(String)
